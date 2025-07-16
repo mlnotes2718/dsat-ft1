@@ -104,9 +104,9 @@ def stop_telegram():
 
     if webhook_response.status_code == 200:
         # set status message
-        status = "The telegram bot is running. Please check with the telegram bot. @sctp1f_tt_bot"
+        status = "The telegram bot is stopped. "
     else:
-        status = "Failed to start the telegram bot. Please check the logs."
+        status = "Failed to stop the telegram bot. Please check the logs."
     
     return(render_template("telegram.html", status=status))
 
